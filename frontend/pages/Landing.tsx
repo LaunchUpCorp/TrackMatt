@@ -1,12 +1,25 @@
 import { Text, Box } from '@gluestack-ui/themed';
+import MintButton from '../components/MintButton';
+import BlueLink from '../components/BlueLink';
+import Logo from '../components/Logo';
 
-export default function Landing() {
+const Landing = () => {
   return (
-    <Box h='100%' w='100%' justifyContent='center' alignItems='center'>
-      <Text>Welcome to TrackMatt</Text>
-      <Text>Image Here</Text>
-      <Text>Create Account</Text>
-      <Text>Sign In</Text>
+    <Box
+      h='100%'
+      w='100%'
+      px='$6'
+      justifyContent='space-evenly'
+      alignItems='center'
+    >
+      <Text fontSize='$2xl'>Welcome to TrackMatt</Text>
+      <Logo />
+      <Box alignItems='center'>
+        <MintButton text='Create Account' />
+        <BlueLink text='Sign in' />
+      </Box>
     </Box>
   );
-}
+};
+
+export default Landing;

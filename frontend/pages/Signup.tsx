@@ -11,7 +11,7 @@ export default function Signup() {
       justifyContent='space-evenly'
       alignItems='center'
     >
-      <Text fontSize='$8'>Sign Up</Text>
+      <Text fontSize='$10'>Sign Up</Text>
       <YStack width='75%' justifyContent='center' alignItems='center'>
         <Inputbox placeholder='Name' width='100%' />
         <Inputbox placeholder='Email' width='100%' />

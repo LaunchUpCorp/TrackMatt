@@ -3,12 +3,11 @@ import Inputbox from "../components/Inputbox";
 import MainButton from "../components/MainButton";
 import GoogleButton from "../components/GoogleButton";
 import Logo from "../components/Logo";
+import YStackWrapper from "../components/YStackWrapper"
 
 export default function Signin () {
   return (
-    <YStack
-      theme='light'
-      fullscreen
+    <YStackWrapper
       justifyContent='space-evenly'
       alignItems='center'
     >
@@ -23,6 +22,6 @@ export default function Signin () {
         <Text my='$4'>Or sign in with</Text>
         <GoogleButton signin />
       </YStack>
-    </YStack>
+    </YStackWrapper>
   );
 } 

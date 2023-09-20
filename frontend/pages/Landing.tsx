@@ -4,10 +4,11 @@ import MainButton from '../components/MainButton';
 import LinkSmall from '../components/LinkSmall';
 import type { RootStackParamList } from '../navigation.types';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import YStackWrapper from '../components/YStackWrapper';
 
 type Props = {
-  navigation: NativeStackNavigationProp<RootStackParamList, 'Landing'>
-}
+  navigation: NativeStackNavigationProp<RootStackParamList, 'Landing'>;
+};
 
 export default function Landing({ navigation }: Props) {
   function navigateSignup() {
@@ -17,7 +18,7 @@ export default function Landing({ navigation }: Props) {
     navigation.navigate('Signin');
   }
   return (
-    <YStack fullscreen justifyContent="space-evenly" alignItems="center">
+    <YStackWrapper justifyContent='space-evenly' alignItems='center'>
       <Text fontSize="$8" color="black">
         Welcome To TrackMatt
       </Text>
@@ -26,6 +27,6 @@ export default function Landing({ navigation }: Props) {
         <MainButton message="Create Account" onPress={navigateSignup} />
         <LinkSmall color="blue" message="Sign in" onPress={navigateSignin} />
       </YStack>
-    </YStack>
+    </YStackWrapper>
   );
 }

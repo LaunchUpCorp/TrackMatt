@@ -2,12 +2,11 @@ import { YStack, Text } from 'tamagui';
 import Inputbox from '../components/Inputbox';
 import MainButton from '../components/MainButton';
 import GoogleButton from '../components/GoogleButton';
+import YStackWrapper from '../components/YStackWrapper';
 
 export default function Signup() {
   return (
-    <YStack
-      theme='light'
-      fullscreen
+    <YStackWrapper
       justifyContent='space-evenly'
       alignItems='center'
     >
@@ -23,6 +22,6 @@ export default function Signup() {
         <Text my='$4'>Or sign up with</Text>
         <GoogleButton />
       </YStack>
-    </YStack>
+    </YStackWrapper>
   );
 }

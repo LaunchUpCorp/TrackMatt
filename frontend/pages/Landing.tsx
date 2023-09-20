@@ -2,7 +2,7 @@ import { YStack, Text } from 'tamagui';
 import Logo from '../components/Logo';
 import MainButton from '../components/MainButton';
 import LinkSmall from '../components/LinkSmall';
-import type { RootStackParamList } from '../navigationTypes';
+import type { RootStackParamList } from '../navigation.types';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 type Props = {

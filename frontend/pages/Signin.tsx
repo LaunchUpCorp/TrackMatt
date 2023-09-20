@@ -11,8 +11,10 @@ export default function Signin () {
       justifyContent='space-evenly'
       alignItems='center'
     >
-      <Text fontSize='$10'>Sign In</Text>
-      <Logo />
+      <YStack width='100%' alignItems='center'>
+        <Text my='$8' fontSize='$10'>Sign In</Text>
+        <Logo />
+      </YStack>
       <YStack width='75%' justifyContent='center' alignItems='center'>
         <Inputbox placeholder='Email' width='100%' />
         <Inputbox placeholder='Password' secureTextEntry width='100%' />

@@ -1,13 +1,8 @@
 import { Button } from 'tamagui';
 
-// type Props = {
-//   message: string;
-//   color?: string;
-//   onPress?: (e: any) => void;
-// };
-type Props = React.ComponentProps<typeof Button>
+type Props = React.ComponentProps<typeof Button>;
 
-const LinkSmall: React.FC<Props> = ({children,...props}) => {
+const LinkSmall: React.FC<Props> = ({ children, ...props }) => {
   return (
     <Button unstyled {...props}>
       {children}

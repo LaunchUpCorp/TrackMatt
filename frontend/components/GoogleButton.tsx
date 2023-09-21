@@ -55,6 +55,7 @@ const GoogleButton: React.FC<Props> = ({ signin }) => {
       pressStyle={{ backgroundColor: 'white' }}
       icon={<SvgXml xml={xml} />}
       pr="$6"
+      color="black"
     >
       {signin ? 'Sign in with Google' : 'Sign up with Google'}
     </Button>

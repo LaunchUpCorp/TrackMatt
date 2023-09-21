@@ -21,7 +21,7 @@ export default function Landing({ navigation }: Props) {
     <YStackWrapper justifyContent="space-evenly" alignItems="center">
       <Text fontSize="$8">Welcome To TrackMatt</Text>
       <Logo />
-      <YStack w="full" justifyContent="center" alignItems="center">
+      <YStack w="100%" justifyContent="center" alignItems="center">
         <MainButton onPress={navigateSignup}>Create Account</MainButton>
         <LinkSmall onPress={navigateSignin}>Sign in</LinkSmall>
       </YStack>

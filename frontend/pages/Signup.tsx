@@ -7,7 +7,7 @@ import YStackWrapper from '../components/YStackWrapper';
 export default function Signup() {
   return (
     <YStackWrapper justifyContent="space-evenly" alignItems="center">
-      <Text fontSize="$10">Sign Up</Text>
+      <Text my='$8' fontSize="$10">Sign Up</Text>
       <YStack width="75%" justifyContent="center" alignItems="center">
         <Inputbox placeholder="Name" width="100%" />
         <Inputbox placeholder="Email" width="100%" />

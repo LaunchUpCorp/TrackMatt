@@ -13,8 +13,8 @@ export default function Signup() {
         <Inputbox placeholder="Email" width="100%" />
         <Inputbox placeholder="Password" secureTextEntry width="100%" />
         <Inputbox placeholder="confirm Password" secureTextEntry width="100%" />
-        <MainButton>Sign Up</MainButton>
       </YStack>
+      <MainButton>Sign Up</MainButton>
       <YStack justifyContent="center" alignItems="center">
         <Text my="$4">Or sign up with</Text>
         <GoogleButton />

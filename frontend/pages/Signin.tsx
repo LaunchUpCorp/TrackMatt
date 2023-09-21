@@ -17,9 +17,9 @@ export default function Signin() {
       <YStack width="75%" justifyContent="center" alignItems="center">
         <Inputbox placeholder="Email" width="100%" />
         <Inputbox placeholder="Password" secureTextEntry width="100%" />
-        <MainButton>Login</MainButton>
       </YStack>
-      <YStack justifyContent="center" alignItems="center">
+      <MainButton>Login</MainButton>
+      <YStack width='' justifyContent="center" alignItems="center">
         <Text my="$4">Or sign in with</Text>
         <GoogleButton signin />
       </YStack>

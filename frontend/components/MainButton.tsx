@@ -6,7 +6,7 @@ type Props = {
 };
 
 const MainButton: React.FC<Props> = ({ message, onPress }) => {
-  return <Button size='$6' my='$4' onPress={onPress}>{message}</Button>;
+  return <Button themeInverse size='$6' my='$4' onPress={onPress}>{message}</Button>;
 };
 
 export default MainButton;

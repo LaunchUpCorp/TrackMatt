@@ -1,13 +1,11 @@
 import { TamaguiProvider } from 'tamagui';
 import config from './tamagui.config';
-import Landing from './pages/Landing';
-import Signup from './pages/Signup';
-import Signin from './pages/Signin';
+import Navigator from './Navigator'
 
 export default function App() {
   return (
-    <TamaguiProvider config={config}>
-      <Landing />
+    <TamaguiProvider defaultTheme='light' config={config}>
+      <Navigator />
     </TamaguiProvider>
   );
 }

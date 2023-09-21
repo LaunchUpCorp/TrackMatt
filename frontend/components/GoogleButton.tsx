@@ -1,7 +1,11 @@
 import { Button } from 'tamagui';
 import { SvgXml } from 'react-native-svg';
 
-export default function GoogleButton() {
+type Props = {
+  signin?: boolean;
+};
+
+const GoogleButton: React.FC<Props> = ({ signin }) => {
   const xml = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="46px" height="46px" viewBox="0 0 46 46" version="1.1">
     <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
     <title>btn_google_light_normal_ios</title>
@@ -46,13 +50,15 @@ export default function GoogleButton() {
 </svg>`;
   return (
     <Button
-      backgroundColor='white'
-      borderColor='black'
+      backgroundColor="white"
+      borderColor="black"
       pressStyle={{ backgroundColor: 'white' }}
       icon={<SvgXml xml={xml} />}
-      pr='$6'
+      pr="$6"
     >
-      Sign up with Google
+      {signin ? 'Sign in with Google' : 'Sign up with Google'}
     </Button>
   );
-}
+};
+
+export default GoogleButton;

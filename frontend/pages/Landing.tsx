@@ -18,14 +18,12 @@ export default function Landing({ navigation }: Props) {
     navigation.navigate('Signin');
   }
   return (
-    <YStackWrapper justifyContent='space-evenly' alignItems='center'>
-      <Text fontSize="$8">
-        Welcome To TrackMatt
-      </Text>
+    <YStackWrapper justifyContent="space-evenly" alignItems="center">
+      <Text fontSize="$8">Welcome To TrackMatt</Text>
       <Logo />
       <YStack w="full" justifyContent="center" alignItems="center">
         <MainButton message="Create Account" onPress={navigateSignup} />
-        <LinkSmall message="Sign in" onPress={navigateSignin} />
+        <LinkSmall onPress={navigateSignin}>Sign in</LinkSmall>
       </YStack>
     </YStackWrapper>
   );
